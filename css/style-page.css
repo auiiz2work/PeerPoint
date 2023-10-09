@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+
+
+.container {
+    max-width: 1140;
+    margin: 0 auto;
+}
+
+.page {
+    /* width: 390px; */
+    /* min-height: 100vh; */
+    /* border: 1px solid red; */
+    display: block;
+    background-color: #fff;
+
+    & .page-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+
+        & .logo-img {
+            height: 120px;
+            width: 120px;
+        }
+
+        & a {
+            margin: 20px;
+            color: #757575;
+            font-size: 18px;
+        }
+
+        & .login {
+            background-color: #FFC500;
+            color: #242424;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            margin-top: 100px;
+            padding: 12px 58px;
+            text-decoration: none;
+            border-radius: 10px;
+
+        }
+
+        & .register {
+            background-color: #fff;
+            color: #242424;
+            border: 1px solid #757575;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            margin-top: 10px;
+            padding: 10px 48px;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+    }
+}
+
+
+.page-consent {
+    margin: 3rem 1rem;
+
+    & .consent-form {
+        display: flex;
+        flex-direction: column;
+    
+        & h3 {
+            margin-top: 1rem;
+        }
+    
+        & p {
+            margin-top: 1rem;
+            text-indent: 40px;
+        }
+    }
+}
+
+
+.consent-heard {
+    text-align: center;
+}
+
+.form-check-label,
+.form-check-input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.form-check {
+    margin: 0 1rem;
+    font-size: 20px;
+    margin-top: 1rem;
+    /* margin-bottom: 20%; */
+}
+
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    /* background-color: #64D220; */
+
+}
+
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+
+    & button {
+        font-size: large;
+    }
+
+    & .bg-form {
+        background-color: #FFC600;
+        border: none;
+        border-radius: 10px;
+    }
+    & .w-100 {
+        width: 50% !important;
+    }
+
+    & .btn:disabled,
+    .btn.disabled,
+    fieldset:disabled .btn {
+        pointer-events: none;
+        opacity: 0.65;
+    }
+    
+    & button:not(:disabled),
+    [type="button"]:not(:disabled),
+    [type="reset"]:not(:disabled),
+    [type="submit"]:not(:disabled) {
+        cursor: pointer;
+    }
+    
+    & .btn {
+        margin-bottom: 1rem;
+        letter-spacing: -0.025rem;
+        text-transform: uppercase;
+        box-shadow: 0 4px 7px -1px rgba(0, 0, 0, 0.11), 0 2px 4px -1px rgba(0, 0, 0, 0.07);
+        background-size: 150%;
+        background-position-x: 25%;
+    }
+}

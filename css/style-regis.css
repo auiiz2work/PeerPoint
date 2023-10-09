@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.container {
+    max-width: 1140;
+    margin: 0 auto;
+}
+
+.page {
+    /* width: 390px; */
+    /* min-height: 100vh; */
+    /* border: 1px solid red; */
+    display: block;
+    background-color: #fff;
+
+    & .page-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+
+        & .logo-img{
+            height: 52px;
+            width: 52px;
+        }
+
+        & a {
+            margin: 20px;
+            color: #757575;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .container{
+        max-width: 480;
+    }
+}

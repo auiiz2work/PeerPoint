@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab || www.codinglabweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Verification Form</title>
+    <link rel="stylesheet" href="css/style-otp.css" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="js/script-otp.js" defer></script>
+
+    <style>
+        .btn {
+            background-color: #fff;
+            color: #242424;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            /* margin-top: 100px; */
+            padding: 10px 58px;
+            text-decoration: none;
+            border-radius: 10px;
+            margin: 2rem auto;
+            width: 100%;
+        }
+    </style>
+
+  </head>
+
+  <body>
+    <nav>
+        <a href="register.html"><img src="img/back-btn_arrow-left-bold.svg" alt="back" class="back-btn"></a>
+    </nav>
+    <div class="otp">
+        <div class="container">
+            <h4>ใส่รหัสยืนยัน PIN</h4>
+            <form action="interest.html" id="otpForm">
+              <div class="input-field">
+                <input type="number" />
+                <input type="number" disabled />
+                <input type="number" disabled />
+                <input type="number" disabled />
+                <input type="number" disabled />
+                <input type="number" disabled />
+              </div>
+              <button>ยืนยัน</button>
+              <!-- <input type="button" class="btn" onclick="document.location = 'interest.html'" value="ยืนยัน"> -->
+              <!-- <button onclick="location.href='interest.html'">ยืนยัน</button> -->
+              <!-- <button onclick="document.location = 'interest.html'">ข้าม</button> -->
+              <input type="button" class="btn" onclick="document.location = 'interest.html'" value="ข้าม">
+            </form>
+    </div>
+    
+    </div>
+  </body>
+</html>
